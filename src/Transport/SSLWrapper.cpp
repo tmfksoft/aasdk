@@ -40,7 +40,7 @@ SSLWrapper::SSLWrapper()
 
 SSLWrapper::~SSLWrapper()
 {
-    FIPS_mode_set(0);
+    //FIPS_mode_set(0); Why do you need it? It is zero by default and works only on openssl 1.0.2
     ENGINE_cleanup();
     CONF_modules_unload(1);
     EVP_cleanup();
