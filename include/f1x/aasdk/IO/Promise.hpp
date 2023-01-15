@@ -22,6 +22,7 @@
 #include <boost/asio.hpp>
 #include <f1x/aasdk/Error/Error.hpp>
 #include <f1x/aasdk/IO/IOContextWrapper.hpp>
+#include <boost/noncopyable.hpp>
 
 namespace f1x
 {
